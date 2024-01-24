@@ -1,2 +1,8 @@
-let navbar= document.querySelector("ul")
-let menubar= document.getElementById("#menu-icon")
+const sidebar= document.querySelector(".sidebar")
+function showsidebar(){
+  
+    sidebar.style.display= 'flex'
+}
+function hidesidebar(){
+    sidebar.style.display= 'none'
+}
