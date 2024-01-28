@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,20 +9,64 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
-<body>
-<header>
-    <div class="logo-sarch"> <img src="Assets/facebook-svgrepo-com.svg" alt="facebook"> 
-        <form class="nosubmit">
-            <input class="nosubmit" type="search" placeholder="Search Facebook">
-          </form>
-          </div>
-          <div class="navicons">
-            <span><i class='bx bxs-home' ></i></span>
-            <span><i class='bx bxs-user'></i></span>
-            <span><i class='bx bx-carousel' ></i></span>
-          </div>
-</header>
 
+<body>
+    <header>
+        <div class="logo-sarch"> <a href="#" class="fblogo"><i class='bx bxl-facebook-circle'></i></a>
+            <form class="nosubmit">
+                <input class="nosubmit" type="search" placeholder="Search Facebook">
+            </form>
+        </div>
+        <div class="navicons">
+            <a href="#"><i class='bx bxs-home'></i></a>
+            <a href="#"><i class='bx bxs-user'></i></a>
+            <a href="#"><i class='bx bx-carousel'></i></a>
+        </div>
+        <div class="right-nav">
+            <a href="#">Find Frinds</a>
+            <a href="#"><i class='bx bxs-grid'></i></a>
+            <a href="#"><i class='bx bxl-messenger'></i></a>
+            <a href="#"><i class='bx bxs-bell'></i></a>
+            <img src="https://scontent.fccu13-4.fna.fbcdn.net/v/t39.30808-1/420496330_122101086314189661_7853227783791629757_n.jpg?stp=dst-jpg_p160x160&_nc_cat=102&ccb=1-7&_nc_sid=5740b7&_nc_ohc=iqlDqrXW5KcAX_0gkQB&_nc_ht=scontent.fccu13-4.fna&oh=00_AfD5troVwBkMZ9hFVL9gqs2r9qx8tLt-Xt1ttqUg9cv6lA&oe=65B7D4AC"
+                alt="Nirupam">
+        </div>
+    </header>
+    <main>
+        <section class="profilenav">
+            <a href="#" class="profilenavitem"> <img
+                    src="https://scontent.fccu13-4.fna.fbcdn.net/v/t39.30808-1/420496330_122101086314189661_7853227783791629757_n.jpg?stp=dst-jpg_p160x160&_nc_cat=102&ccb=1-7&_nc_sid=5740b7&_nc_ohc=iqlDqrXW5KcAX_0gkQB&_nc_ht=scontent.fccu13-4.fna&oh=00_AfD5troVwBkMZ9hFVL9gqs2r9qx8tLt-Xt1ttqUg9cv6lA&oe=65B7D4AC"
+                    alt="Nirupam"> Nirupam Pal</div>
+                <a href="#" class="profilenavitem"> <i class='bx bxs-group'></i> Friends</a>
+                <a href="#" class="profilenavitem"><i class='bx bxs-time-five'></i> Memories</a>
+                <a href="#" class="profilenavitem"><i class='bx bxs-bookmark-star'></i> Saved</a>
+                <a href="#" class="profilenavitem"> <i class='bx bx-sitemap'></i> Groups</a>
+                <a href="#" class="profilenavitem"><i class='bx bx-slideshow'></i> Videos</a>
+                <a href="#" class="profilenavitem"> <i class='bx bxs-store-alt'></i> Marketplace</a>
+                <a href="#" class="profilenavitem"> <i class='bx bxs-book-content'></i> Feed</a>
+                <a href="#" class="profilenavitem"> <i class='bx bxs-calendar-check'></i> Events</a>
+                <a href="#" class="downarrow"><i class='bx bx-chevron-down'></i></a>
+
+        </section>
+        <section class="feed">
+            <div class="slider-container">
+                <div class="slider">
+                  <div class="slide">
+                    <img src="Assets/wallpaperflare.com_wallpaper (3).jpg" alt="Slide 1">
+                  </div>
+                  <div class="slide">
+                    <img src="Assets/wallpaperflare.com_wallpaper (4).jpg" alt="Slide 2">
+                  </div>
+                  <div class="slide">
+                    <img src="Assets/wallpaperflare.com_wallpaper.jpg" alt="Slide 3">
+                  </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">❮</button>
+                <button class="next" onclick="moveSlide(1)">❯</button>
+              </div>
+
+        </section>
+        <section class="activepepole"></section>
+    </main>
 
 
 
@@ -30,4 +75,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
