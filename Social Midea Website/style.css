@@ -12,6 +12,7 @@ body {
   padding: 20px;
   overflow: hidden;
 }
+/* Header section */
 
 header {
   display: flex;
@@ -28,11 +29,7 @@ header {
   justify-content: center;
   align-items: center;
   gap: 3px;
-
-
-
 }
-
 .navicons a {
   text-decoration: none;
   color: #0866ff;
@@ -104,9 +101,6 @@ header {
   justify-content: start;
 }
 
-
-
-
 form.nosubmit {
   border: none;
   background-color: #f1f1f1;
@@ -124,6 +118,7 @@ input.nosubmit {
 input:focus{
   outline: none;
 }
+/* Main content  */
 
 main {
   width: 95vw;
@@ -136,12 +131,15 @@ main {
 
 .feed {
   width: 50%;
-  height: 90vh;
+  height: 100vh;
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
+  overflow: scroll;
+}
+.feed::-webkit-scrollbar{
+  display: none;
 }
 
 .profilenav {
@@ -151,13 +149,21 @@ main {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  overflow: scroll;
 }
-
+.profilenav::-webkit-scrollbar{
+  display: none;
+}
 .activepepole {
   width: 25%;
   height: 90vh;
+ overflow: scroll;
   background-color: rgb(255, 255, 255);
 }
+.activepepole::-webkit-scrollbar{
+  display: none;
+}
+/* Profile Navbar  */
 
 .profilenav .profilenavitem img {
   width: 30px;
@@ -215,10 +221,12 @@ main {
 }
 
 
+
 .whtatson{
   margin-top: 20px;
+  padding-top: 10px;
   width: 80%;
-  height: 100px;
+  height: 150px;
   background-color: #f1f1f1;
   display: flex;
   flex-direction: column;
@@ -282,11 +290,8 @@ main {
   margin-top: 20px;
   background-color: #ffffff;
   height: auto;
-  overflow: scroll;
-  width: 80%;
-}
-.mainpostpic::-webkit-scrollbar{
-  display: none;
+  width: 100%;
+ margin:90px 0;
 }
 .postof{
   max-height: 500px;
@@ -345,7 +350,46 @@ main {
   max-width: 100%;
 
 }
-
+.reactionspart{
+  display: flex;
+  flex-direction: column;
+}
+.reactionspart .reactiicons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 5px;
+  font-size: 1.2rem;
+  border-top: 1px solid #555555;
+}
+.firstpartreactions a:first-child{
+  color: #0866ff;
+}
+.firstpartreactions a:nth-child(2){
+  color: #ff1313;
+}
+.firstpartreactions a:nth-child(3){
+  font-weight: 500;
+  color: #000000;
+}
+.secondpartreaction a{
+  color: #000000;
+}
+.secondpartreaction a i{
+  color: #727272;
+  padding-left: 3px;
+}
+.downreactiicons{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 5px 0;
+  border-top: 1px solid #555555;
+}
+.downreactiicons a{
+  color: #555555;
+  font-size: 1.2rem;
+}
 
 
 
@@ -386,12 +430,17 @@ border: 2px solid #0866ff;
 .activepepoles .namesofpepole{
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin: 10px 10px;
+  padding: 10px 10px;
+  transition: .2s all linear;
+  border-radius: 8px;
 
 }
 .activepepoles .namesofpepole a{
   font-size: 1rem;
   font-weight: 500;
   color: #000000;
+}
+.namesofpepole:hover{
+  background-color: #dbdbdb;
+  letter-spacing: 1px;
 }
